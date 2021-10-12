@@ -1,0 +1,65 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	height: 100vh;
+	margin: 0;
+	font-family: "Lato", sans-serif;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.split {
+	height: 100%;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: 1.2s ease-in-out;
+}
+
+.left {
+	color: #232227;
+	background-image: url(./ps5.jpg);
+	background-position: right;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.right {
+	color: #fff;
+	background-image: url(./xbox.jpg);
+	background-position: left;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+button {
+	border: none;
+	padding: 10px 16px;
+	border-radius: 8px;
+	font-family: inherit;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.3s ease-in-out;
+	box-shadow: 0 1px 1px hsl(0deg 0% 0% / 0.075),
+		0 2px 2px hsl(0deg 0% 0% / 0.075), 0 4px 4px hsl(0deg 0% 0% / 0.075),
+		0 8px 8px hsl(0deg 0% 0% / 0.075), 0 16px 16px hsl(0deg 0% 0% / 0.075);
+}
+
+button:hover {
+	color: #fff;
+	background-color: #232227;
+}
